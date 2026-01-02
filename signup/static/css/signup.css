@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Form labels */
+.container label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input fields */
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Focus effect */
+.container input:focus {
+    border-color: #43cea2;
+}
+
+/* Submit button */
+.container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #43cea2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container input[type="submit"]:hover {
+    background: #2ebd91;
+}
+
+/* Login link */
+.container a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #185a9d;
+    font-size: 14px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+}

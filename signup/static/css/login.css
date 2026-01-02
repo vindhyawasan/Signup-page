@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Main container */
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+/* Form title (optional) */
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Input focus */
+.login input:focus {
+    border-color: #667eea;
+}
+
+/* Login button */
+.login input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login input[type="submit"]:hover {
+    background: #5a67d8;
+}
+
+/* Signup link */
+.container a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #667eea;
+    font-size: 14px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+.container p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+}
